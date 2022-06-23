@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblPage01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Register "
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.034"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <Button
+                android:id="@+id/btnEnglish"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:text="EN"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/lblPage01"
+                app:layout_constraintEnd_toStartOf="@+id/btnSinhala"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:rippleColor="#818080" />
+
+            <Button
+                android:id="@+id/btnSinhala"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:text="සිං"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="28dp"
+                android:text="த"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSinhala"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="60dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1000dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="45dp"
+                        android:text="First Name:"
+                        android:textSize="20sp"></TextView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imgView01"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtfirstname"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="7dp"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView01"
+                            app:layout_constraintHorizontal_bias="0.49"
+                            app:layout_constraintStart_toStartOf="@+id/imgView01"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgView"
+                            android:layout_width="161dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/smallbox2"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="161dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/smallbox2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.422"
+                            app:layout_constraintStart_toStartOf="@+id/guideline"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2"></ImageView>
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Last Name:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <EditText
+                            android:id="@+id/txtlastname"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgView"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView"
+                            app:layout_constraintStart_toStartOf="@+id/imgView"
+                            app:layout_constraintTop_toTopOf="@+id/imgView"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <EditText
+                            android:id="@+id/txtshortname"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgView2"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView2"
+                            app:layout_constraintStart_toStartOf="@+id/imgView2"
+                            app:layout_constraintTop_toTopOf="@+id/imgView2"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Short Name:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline"
+                            app:layout_constraintTop_toTopOf="@+id/textView"></TextView>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_begin="191dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:text="ID Type:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <Spinner
+                            android:id="@+id/idDropDown"
+                            android:layout_width="142dp"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="-5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                            app:layout_constraintHorizontal_bias="0.734"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3"
+                            app:layout_constraintVertical_bias="0.036"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Spinner>
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="ID NO:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline2"
+                            app:layout_constraintTop_toTopOf="@+id/textView3"></TextView>
+
+                        <ImageView
+                            android:id="@+id/imgView3"
+                            android:layout_width="161dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/smallbox2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.491"
+                            app:layout_constraintStart_toStartOf="@+id/guideline2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView5"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtidNo"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgView3"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView3"
+                            app:layout_constraintStart_toStartOf="@+id/imgView3"
+                            app:layout_constraintTop_toTopOf="@+id/imgView3"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_begin="191dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Address:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <ImageView
+                            android:id="@+id/imgView04"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtAddress01"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="7dp"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView04"
+                            app:layout_constraintStart_toStartOf="@+id/imgView04"
+                            app:layout_constraintTop_toTopOf="@+id/imgView04"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <ImageView
+                            android:id="@+id/imgView05"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgView04"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtAddress02"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="7dp"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView05"
+                            app:layout_constraintStart_toStartOf="@+id/imgView05"
+                            app:layout_constraintTop_toTopOf="@+id/imgView05"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <ImageView
+                            android:id="@+id/imgView06"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgView05"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtAddress03"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="7dp"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView06"
+                            app:layout_constraintStart_toStartOf="@+id/imgView06"
+                            app:layout_constraintTop_toTopOf="@+id/imgView06"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Province:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <Spinner
+                            android:id="@+id/provinceDropDown"
+                            android:layout_width="142dp"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="-5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                            app:layout_constraintHorizontal_bias="0.734"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7"
+                            app:layout_constraintVertical_bias="0.036"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Spinner>
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="District:"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.503"
+                            app:layout_constraintStart_toStartOf="@+id/guideline3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0"></TextView>
+
+                        <Spinner
+                            android:id="@+id/districtDropDown"
+                            android:layout_width="142dp"
+                            android:layout_height="31dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.217"
+                            app:layout_constraintStart_toStartOf="@+id/guideline3"
+                            app:layout_constraintTop_toTopOf="@+id/provinceDropDown"
+                            app:layout_constraintVertical_bias="0.014"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Spinner>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_begin="191dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:text="City:"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintHorizontal_bias="0.381"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <Spinner
+                            android:id="@+id/cityDropDown"
+                            android:layout_width="142dp"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="-5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintHorizontal_bias="0.734"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9"
+                            app:layout_constraintVertical_bias="0.036"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Spinner>
+
+                        <ImageView
+                            android:id="@+id/imgView9"
+                            android:layout_width="161dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/smallbox2"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintHorizontal_bias="0.422"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cityDropDown"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtCity"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:enabled="false"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgView9"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView9"
+                            app:layout_constraintStart_toStartOf="@+id/imgView9"
+                            app:layout_constraintTop_toTopOf="@+id/imgView9"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Postal Code:"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toTopOf="@+id/textView9"></TextView>
+
+                        <ImageView
+                            android:id="@+id/imgView11"
+                            android:layout_width="161dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/smallbox2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.422"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtpostalCode"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgView11"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView11"
+                            app:layout_constraintStart_toStartOf="@+id/imgView11"
+                            app:layout_constraintTop_toTopOf="@+id/imgView11"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_begin="191dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:visibility="gone"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Email Address:"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.113"></TextView>
+
+                        <ImageView
+                            android:id="@+id/imgView10"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtemailAddress"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="7dp"
+                            android:inputType="textEmailAddress"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView10"
+                            app:layout_constraintStart_toStartOf="@+id/imgView10"
+                            app:layout_constraintTop_toTopOf="@+id/imgView10"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Password:"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.113"></TextView>
+
+                        <ImageView
+                            android:id="@+id/imgView12"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtpassword"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="7dp"
+                            android:inputType="textPassword"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView12"
+                            app:layout_constraintStart_toStartOf="@+id/imgView12"
+                            app:layout_constraintTop_toTopOf="@+id/imgView12"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Re-Enter Password:"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.113"></TextView>
+
+                        <ImageView
+                            android:id="@+id/imgView13"
+                            android:layout_width="370dp"
+                            android:layout_height="47dp"
+                            android:src="@drawable/txtbox"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView13"></ImageView>
+
+                        <EditText
+                            android:id="@+id/txtcomPassword"
+                            android:layout_width="310dp"
+                            android:layout_height="47dp"
+                            android:layout_marginTop="7dp"
+                            android:inputType="textPassword"
+                            app:layout_constraintEnd_toEndOf="@+id/imgView13"
+                            app:layout_constraintStart_toStartOf="@+id/imgView13"
+                            app:layout_constraintTop_toTopOf="@+id/imgView13"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="28dp"
+                            android:text="Save"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"></Button>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

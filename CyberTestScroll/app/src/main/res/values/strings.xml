@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CyberTestScroll</string>
+
+    <string-array name="idTypes">
+        <item>NIC</item>
+        <item>BR</item>
+        <item>Passport</item>
+    </string-array>
+
+    <string-array name="province">
+        <item>Southern</item>
+        <item>Western</item>
+        <item>Easten</item>
+        <item>Central</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>Colombo</item>
+        <item>Galle</item>
+        <item>Kaluthara</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Dehiwala</item>
+        <item>Galle</item>
+        <item>Mathara</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "459550406206",
+    "firebase_url": "https://cyberconcept-fcf3a-default-rtdb.firebaseio.com",
+    "project_id": "cyberconcept-fcf3a",
+    "storage_bucket": "cyberconcept-fcf3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459550406206:android:b744b72e2cf505adf3036f",
+        "android_client_info": {
+          "package_name": "com.example.cybertestscroll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459550406206-9kqdmjo4f1qnusobaorgb3em1as05329.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cybertestscroll",
+            "certificate_hash": "63da910fb4c990b7e6661bb8ea7d01e25d756979"
+          }
+        },
+        {
+          "client_id": "459550406206-86gu917v2fv2bia3mh8f8qaoq2qlguis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4lz5QIelNoowdydwO-ylZ2aDPVASrRKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459550406206-86gu917v2fv2bia3mh8f8qaoq2qlguis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
